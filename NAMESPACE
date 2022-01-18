@@ -1,0 +1,11 @@
+exportPattern("^[[:alpha:]]+")
+importFrom(MASS,ginv)
+importFrom(Matrix,forceSymmetric)
+importFrom(mvtnorm,rmvnorm,dmvnorm)
+importFrom(grDevices,dev.new)
+importFrom(stats,integrate,dpois,rpois,runif,rexp,dexp,dunif,quantile,as.ts,median,ts.plot,printCoefmat,coef)
+#####################################
+##            S3 methods           ##
+#####################################
+S3method("summary","Bayesiantreg")
+S3method("print","summary.Bayesiantreg")
