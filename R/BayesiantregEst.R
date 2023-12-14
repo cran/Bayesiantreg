@@ -20,7 +20,7 @@ BayesiantregEst <-
       stop("Jumper must be a positive number lesser than nsim")
     }
   
-    #cambiamos la dimensión de y, x, x
+    #cambiamos la dimensiÃ³n de y, x, x
       
     y <- as.matrix(y)
     
@@ -167,7 +167,7 @@ BayesiantregEst <-
         cat("Burn-in iteration : ", i, "\n")
     }
     
-    #volvemos las variables a su dimensión original
+    #volvemos las variables a su dimensiÃ³n original
     
     for (i in 1:ncol(beta.mcmc)){
       beta.mcmc[,i] <- beta.mcmc[,i]*(10^cambioy)/(10^cambiox[,i])
